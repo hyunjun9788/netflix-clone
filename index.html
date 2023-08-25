@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>넷플릭스 클론</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      .topHeader {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 6rem;
+      }
+      .top {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url("movie.jpg");
+        height: 42rem;
+        width: 100%;
+      }
+      .logoImg {
+        width: 10rem;
+        height: 3rem;
+        margin-top: 1.25rem;
+      }
+      .languageAndlogin-btn {
+        margin-top: 1.25rem;
+      }
+      .login-btn {
+        height: 2.5rem;
+        font-size: 1rem;
+        margin-left: 1.25rem;
+        padding: 0.3rem 0.9rem;
+        border: none;
+        border-radius: 0.3rem;
+        background-color: #e50914;
+        color: white;
+      }
+      .select {
+        width: 6.25rem;
+        font-size: 1.125rem;
+        background-color: black;
+        color: white;
+        padding: 0.3rem 0.5rem;
+      }
+
+      .membershipTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding: 0 1.5rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      .first-title {
+        color: white;
+        font-size: 3.2rem;
+      }
+      .second-title {
+        font-size: 1.5rem;
+        color: white;
+      }
+      .third-title {
+        color: white;
+        font-size: 1.25rem;
+      }
+
+      .email {
+        display: flex;
+        margin-top: 1rem;
+        width: 50rem;
+        height: 3rem;
+        justify-content: center;
+      }
+      input {
+        width: 30rem;
+        padding-left: 0.6rem;
+        background-color: black;
+        opacity: 0.5;
+        color: white;
+        font-size: 1rem;
+      }
+      button {
+        font-size: 1.2rem;
+        margin-left: 0.3rem;
+        background-color: red;
+        color: white;
+        padding: 0.2rem 1rem;
+      }
+      .membership-detail {
+        color: white;
+        background: linear-gradient(to bottom, rgb(3, 3, 3), rgb(53, 49, 49));
+        margin-top: 3rem;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+      }
+      .popcon {
+        height: 10rem;
+        height: 10rem;
+      }
+      .first-detail {
+        font-size: 1.5rem;
+      }
+      a {
+        color: rgb(42, 42, 243);
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
