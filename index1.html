@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      .top {
+        background-image: url("movie.jpg");
+        height: 600px;
+        width: 100%;
+      }
+      .logo {
+        color: white;
+      }
+
+      .membership-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+      }
+      .top-menu {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 100px;
+      }
+
+      .title-content {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .membership-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding: 0 20px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .first-title {
+        color: white;
+        font-size: 50px;
+      }
+      .second-title {
+        font-size: 24px;
+        color: white;
+      }
+      .third-title {
+        color: white;
+        font-size: 20px;
+      }
+      .input-button {
+        display: flex;
+        margin-top: 15px;
+        width: 800px;
+        height: 50px;
+        justify-content: center;
+      }
+      input {
+        width: 400px;
+        padding-left: 10px;
+      }
+      button {
+        font-size: 20px;
+        margin-left: 5px;
+      }
+      .detail-content {
+        color: white;
+        background: linear-gradient(to bottom, rgb(3, 3, 3), rgb(53, 49, 49));
+        margin-top: 50px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+      }
+      .popcon {
+        height: 10rem;
+        height: 10rem;
+      }
+      .first-detail {
+        font-size: 1.5rem;
+      }
+      a {
+        color: rgb(42, 42, 243);
+      }
+      .first-middle {
+        display: flex;
+        color: white;
+        padding: 300px 30px;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 10px solid gray;
+        height: 100px;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+      .first-detailContent {
+        font-size: 24px;
+      }
+
+      .image-container {
+        position: relative;
+        display: inline-block;
+      }
+      .image-container img,
+      .image-container video {
+        display: block;
+        max-width: 100%;
+      }
+
+      .image-container video {
+        position: absolute;
+        top: 6.4em;
+        left: 5.3em;
+        width: 72.5%;
+        height: 55%;
+        object-fit: cover;
+      }
+      .second-middle {
+        display: flex;
+        color: white;
+        padding: 300px 30px;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 10px solid gray;
+        height: 100px;
+      }
+      .content-p {
+        font-size: 24px;
+      }
+
+      .third-middle {
+        display: flex;
+        color: white;
+        padding: 300px 30px;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 10px solid gray;
+        height: 100px;
+      }
+
+      .fourth-middle {
+        display: flex;
+        color: white;
+        padding: 300px 30px;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 10px solid gray;
+        height: 100px;
+      }
+      .q-and-a {
+        color: white;
+      }
+      .question {
+        background-color: gray;
+        width: 80%;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <header>
+        <div class="top-menu">
+          <div class="logo">Netflix</div>
+          <div>
+            <select>
+              <option>한국어</option>
+            </select>
+            <button>로그인</button>
+          </div>
+        </div>
+        <div class="membership-title">
+          <h1 class="first-title">
+            대작 영화와 인기 시리즈, 그리고 게임까지!<br />
+            월 5,500원으로 시작하세요<br />
+          </h1>
+          <p class="second-title">
+            지금 바로 가입하세요. 해지는 언제든 가능합니다.
+          </p>
+          <div class="third-title">
+            시청할 준비가 되셨나요?멤버십을 등록하거나 재시작하려면 이메일
+            주소를 입력하세요.
+          </div>
+          <form class="email-form">
+            <div class="input-button">
+              <input type="email" placeholder="이메일 주소" />
+              <button>시작하기</button>
+            </div>
+          </form>
+          <div class="detail-content">
+            <img class="popcon" src="popcon.jpg" />
+            <div>
+              <p class="first-detail">5,500원이면 만날 수 있는 넷플릭스.</p>
+              <p class="secoWnd-detail">광고형 스탠다드 멤버십에 가입하세요.</p>
+              <p class="third-detail"><a href="#">자세히 알아보기</a></p>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="middle">
+      <div class="first-middle">
+        <div class="first-content">
+          <h1 class="first-content-header">TV로 즐기세요</h1>
+          <p class="content-p">
+            스마트TV,PlayStation,Xbox,Chromecast,Apple TV,블루레이 플레이어 등
+            다양한 디바이스에서 시청하세요.
+          </p>
+        </div>
+        <div class="image-container">
+          <img
+            class="first-gif"
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+          />
+          <video autoplay playsinline mutedloop>
+            <source
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+      <div class="second-middle">
+        <div class="image-container">
+          <img
+            class="first-gif"
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+          />
+          <video autoplay playsinline mutedloop>
+            <source
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="second-content">
+          <h1 class="second-content-header">어디서나 자유롭게 시청하세요</h1>
+          <p class="content-p">
+            각종 영화와 시리즈를 스마트폰,태블릿,노트북,TV에서 무제한으로
+            스트리밍하세요.
+          </p>
+        </div>
+      </div>
+      <div class="third-middle">
+        <div class="third-content">
+          <h1 class="third-content-header">TV로 즐기세요</h1>
+          <p class="content-p">
+            스마트TV,PlayStation,Xbox,Chromecast,Apple TV,블루레이 플레이어 등
+            다양한 디바이스에서 시청하세요.
+          </p>
+        </div>
+        <div class="image-container">
+          <img
+            class="first-gif"
+            src="https://occ-0-4342-993.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABdl4VeWgVycbbzJBV1KbIpMScxU_I4h6uTvNRpFab-65jsTTqI0V-g-4Jq4CLaIVqx-wbKAwA_Ee8KhZyTb0SFJ5tK2mifI-GYEB.png?r=15b"
+          />
+        </div>
+      </div>
+      <div class="fourth-middle">
+        <div class="image-container">
+          <img
+            class="first-gif"
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+          />
+        </div>
+        <div class="fourth-content">
+          <h1 class="fourth-content-header">
+            즐겨 보는 콘텐츠를 저장해 오프라인으로 시청하세요
+          </h1>
+          <p class="content-p">광고 없는 멤버십에서만 이용 가능합니다.</p>
+        </div>
+      </div>
+
+      <div class="q-and-a">
+        <div class="qna-header">
+          <h1>자주 묻는 질문</h1>
+        </div>
+        <div>
+          <div id="first-question">
+            넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?
+          </div>
+          <div id="second-question">넷플릭스란 무엇인가요?</div>
+          <div id="third-question">넷플릭스 요금은 얼마인가요?</div>
+          <div id="fourth-question">어디에서 시청할 수 있나요?</div>
+          <div id="fifth-question">멤버십을 해지하려면 어떻게 하나요?</div>
+          <div id="sixth-question">아이들이 넷플릭스를 봐도 좋을까요?</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
