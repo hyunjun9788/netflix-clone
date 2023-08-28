@@ -2,6 +2,8 @@
 import FirstMiddle from "./FirstMiddle.js";
 import SecondMiddle from "./SecondMiddle.js";
 import ThirdMiddle from "./ThirdMiddle.js";
+import FourthMiddle from "./FourthMiddle.js";
+import FifthMiddle from "./FifthMiddle.js";
 class Middle {
   container; // Top Element
 
@@ -18,15 +20,14 @@ class Middle {
     const firstMiddle = new FirstMiddle();
     const secondMiddle = new SecondMiddle();
     const thirdMiddle = new ThirdMiddle();
-
-    // const fourthMiddle = new FourthMiddle();
-    // const fifthMiddle = new FourthMiddle();
+    const fourthMiddle = new FourthMiddle();
+    const fifthMiddle = new FifthMiddle();
 
     this.container.appendChild(firstMiddle.Element반환());
     this.container.appendChild(secondMiddle.Element반환());
     this.container.appendChild(thirdMiddle.Element반환());
-    // this.container.appendChild(fourthMiddle);
-    // this.container.appendChild(fifthMiddle);
+    this.container.appendChild(fourthMiddle.Element반환());
+    this.container.appendChild(fifthMiddle.Element반환());
 
     return this.container;
   }

@@ -14,9 +14,6 @@ class SecondMiddle {
     secondContentP.className = "content-p";
     const imageContainer = document.createElement("div");
     imageContainer.className = "image-container";
-    this.container.appendChild(secondContent);
-    secondContent.appendChild(secondContentHeader);
-    secondContent.appendChild(secondContentP);
 
     const image = document.createElement("img");
     image.className = "first-gif";
@@ -41,6 +38,10 @@ class SecondMiddle {
       "src",
       "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
     );
+    this.container.appendChild(secondContent);
+    secondContent.appendChild(secondContentHeader);
+    secondContent.appendChild(secondContentP);
+
     return this.container;
   }
 }
