@@ -58,6 +58,7 @@ class FifthMiddle {
     form.appendChild(input);
     input.setAttribute("type", "email");
     input.setAttribute("placeholder", "이메일 주소");
+    input.className = "second-input";
     return this.container;
   }
 }
