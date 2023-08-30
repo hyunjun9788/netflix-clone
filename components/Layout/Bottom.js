@@ -8,8 +8,11 @@ class Bottom {
 
   Element반환() {
     const phoneNumber = document.createElement("div");
+    const questionContent = document.createElement("span");
     phoneNumber.className = "phone-number";
-    phoneNumber.textContent = "질문이 있으신가요? 문의 전화: ";
+    phoneNumber.appendChild(questionContent);
+    questionContent.className = "question-content";
+    questionContent.textContent = "질문이 있으신가요? 문의 전화: ";
 
     const phoneNumberLink = document.createElement("a");
     phoneNumberLink.href = "tel:080-001-9587";

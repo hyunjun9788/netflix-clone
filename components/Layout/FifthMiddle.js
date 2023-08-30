@@ -59,6 +59,10 @@ class FifthMiddle {
     input.setAttribute("type", "email");
     input.setAttribute("placeholder", "이메일 주소");
     input.className = "second-input";
+
+    const startButton = document.createElement("button");
+    form.appendChild(startButton);
+    startButton.textContent = "시작하기 >";
     return this.container;
   }
 }
